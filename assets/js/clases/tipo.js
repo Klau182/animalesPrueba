@@ -6,8 +6,7 @@ class Leon extends Animal {
   }
 
   Rugir() {
-    return this.sonido;
-    
+    return this.sonido;  
   }
 }
 
@@ -27,8 +26,7 @@ class Oso extends Animal {
   }
 
   Grunir() {
-    return this.sonido;
-    
+    return this.sonido;   
   }
 }
 
@@ -38,8 +36,7 @@ class Serpiente extends Animal {
   }
 
   Sisear() {
-    return this.sonido;
-    
+    return this.sonido;   
   }
 }
 
@@ -49,8 +46,7 @@ class Aguila extends Animal {
   }
 
   Chillar() {
-    return this.sonido;
-    
+    return this.sonido;  
   }
 }
 
