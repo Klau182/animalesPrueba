@@ -1,4 +1,4 @@
-import { Leon, Lobo, Oso, Serpiente, Aguila } from "./clases/Tipo.js"
+import { Leon, Lobo, Oso, Serpiente, Aguila } from "./clases/tipo.js"
 import Animales from "./Consulta.js";
 
 let animalesInvestigados = [];

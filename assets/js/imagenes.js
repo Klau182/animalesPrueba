@@ -1,4 +1,4 @@
-import Animales from './Consulta.js'
+import Animales from './consulta.js'
 
 const animal = document.getElementById("animal")
 const preview = document.getElementById("preview")
