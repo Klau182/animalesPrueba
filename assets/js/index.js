@@ -1,5 +1,5 @@
 import { Leon, Lobo, Oso, Serpiente, Aguila } from "./clases/tipo.js"
-import Animales from "./Consulta.js";
+import Animales from "./consulta.js";
 
 let animalesInvestigados = [];
 
@@ -19,18 +19,18 @@ btnRegistrar.addEventListener("click", async (e) => {
     //se solicita llenar todos los campos//    
     if(nombreAnimal.value && edadAnimal.value && comentariosAnimal.value) {
 
-        if(nombreAnimal.value == "Leon") {
+        if(nombreAnimal.value === "Leon") {
             nuevoAnimal = new Leon(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
             
-        }else if (nombreAnimal.value == "Lobo") {
+        }else if(nombreAnimal.value === "Lobo") {
             nuevoAnimal = new Lobo(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
 
-        } else if (nombreAnimal.value == "Oso") {
+        } else if(nombreAnimal.value === "Oso") {
             nuevoAnimal = new Oso(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
 
-        }else if (nombreAnimal.value == "Serpiente") {
+        }else if(nombreAnimal.value === "Serpiente") {
             nuevoAnimal = new Serpiente(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
-        }else if (nombreAnimal.value == "Aguila") {
+        }else if(nombreAnimal.value === "Aguila") {
             nuevoAnimal = new Aguila(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
         };
 
@@ -42,7 +42,7 @@ btnRegistrar.addEventListener("click", async (e) => {
 
         mostrarTabla();
 
-    } else {
+    }else{
         alert("Faltan datos por llenar")
     };
 });
