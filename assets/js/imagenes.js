@@ -8,4 +8,4 @@ animal.addEventListener("click", async () => {
     const imagenPreview = animales.find(animal => animal.name === animalNombre)
     const preview = document.getElementById("preview")
     preview.style.backgroundImage = `url("./assets/imgs/${imagenPreview.imagen}")`
-})
+});

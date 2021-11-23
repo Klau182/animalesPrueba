@@ -19,18 +19,18 @@ btnRegistrar.addEventListener("click", async (e) => {
     //se solicita llenar todos los campos//    
     if(nombreAnimal.value && edadAnimal.value && comentariosAnimal.value) {
 
-        if(nombreAnimal.value === "Leon") {
+        if(nombreAnimal.value == "Leon") {
             nuevoAnimal = new Leon(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
             
-        }else if(nombreAnimal.value === "Lobo") {
+        }else if(nombreAnimal.value == "Lobo") {
             nuevoAnimal = new Lobo(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
 
-        } else if(nombreAnimal.value === "Oso") {
+        } else if(nombreAnimal.value == "Oso") {
             nuevoAnimal = new Oso(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
 
-        }else if(nombreAnimal.value === "Serpiente") {
+        }else if(nombreAnimal.value == "Serpiente") {
             nuevoAnimal = new Serpiente(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
-        }else if(nombreAnimal.value === "Aguila") {
+        }else if(nombreAnimal.value == "Aguila") {
             nuevoAnimal = new Aguila(nombreAnimal.value, edadAnimal.value, `./assets/imgs/${animalObject.imagen}`, comentariosAnimal.value, `./assets/sounds/${animalObject.sonido}`)
         };
 
@@ -49,7 +49,7 @@ btnRegistrar.addEventListener("click", async (e) => {
 
 
 const mostrarTabla = () => {
-    const animalesTemplate = document.getElementById('Animales')
+    const animalesTemplate = document.getElementById('animales')
     animalesTemplate.innerHTML = ""
     animalesInvestigados.forEach((a) => {
         animalesTemplate.innerHTML += `
@@ -70,6 +70,3 @@ window.sonido = (rutaSonido) => {
     let sound = new Audio(rutaSonido)
     sound.play()
 };
-
-
-
