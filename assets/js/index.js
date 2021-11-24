@@ -66,7 +66,9 @@ const mostrarTabla = () => {
     });
 }
 
+
 window.sonido = (rutaSonido) => {
     let sound = new Audio(rutaSonido)
     sound.play()
 };
+
