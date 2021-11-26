@@ -50,4 +50,11 @@ class Aguila extends Animal {
   }
 }
 
+
+
+
+
+
+
+
 export { Leon, Lobo, Oso, Serpiente, Aguila };

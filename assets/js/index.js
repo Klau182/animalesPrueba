@@ -1,5 +1,5 @@
 import { Leon, Lobo, Oso, Serpiente, Aguila } from "./clases/tipo.js"
-import Animales from "./consulta.js";
+import datosAnimales from "./consulta.js";
 
 let animalesInvestigados = [];
 
@@ -11,7 +11,7 @@ btnRegistrar.addEventListener("click", async (e) => {
 
     let edadAnimal = document.querySelector("#edad")
     let comentariosAnimal = document.querySelector("#comentarios")
-    const {animales} = await Animales.getData();
+    const {animales} = await datosAnimales.getData();
     const animalObject = animales.find(animal => animal.name === nombreAnimal.value);
 
     let nuevoAnimal;
@@ -39,14 +39,13 @@ btnRegistrar.addEventListener("click", async (e) => {
         edadAnimal.selectedIndex = 0
         comentariosAnimal.value = ""
         animalesInvestigados.push(nuevoAnimal)
-
+        console.log(animalesInvestigados)
         mostrarTabla();
 
     }else{
         alert("Faltan datos por llenar")
     };
 });
-
 
 const mostrarTabla = () => {
     const animalesTemplate = document.getElementById('animales')
@@ -65,7 +64,6 @@ const mostrarTabla = () => {
          </div>`
     });
 }
-
 
 window.sonido = (rutaSonido) => {
     let sound = new Audio(rutaSonido)

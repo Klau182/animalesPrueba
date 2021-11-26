@@ -6,13 +6,12 @@
 body {
   background-image: url("../imgs/fondo.jpg");
   background-position: bottom;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   padding: 100px;
 }
-
-/* Formulario */
 
 #preview {
   height: 200px;
@@ -23,7 +22,6 @@ body {
 }
 
 
-/* Tabla de Participantes */
 
 #Animales {
   height: 100%;
@@ -42,8 +40,27 @@ body {
   max-width: 30%;
 }
 
-/* Modal */
 
 .modal-dialog{
     max-width: 85% !important;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+} 
+
+#sonido{
+  height: 40px;
+  width: 40px;
+}
+
+.tarjetas{
+  height: 200px;
+  width: 200px;
+}
+
+.modal-body{
+  font-size: 1.5em;
+  color: #f0f0f0;
 }
